@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Just Trying Stuff</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header">
+    <a href="#logo" class="logo">Akash Chavan</a>
+    <ul class="ul">
+      <li class="li"><a class="active" href="#">Home</a></li>
+      <li class="li"><a href="#">About</a></li>
+      <li class="li"><a href="#">Destination</a></li>
+      <li class="li"><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <section>
+    <h2 id="text"><span class="span1">Its time for a new</span><br>Adventure</h2>
+    <img class = "Forest" src="images/Forest.png" alt="Forest-img">
+    <a id="btn" href="#">Explore</a>
+    <img id = "Rocks" class = "Rocks" src="images/Rocks.png" alt="Rocks-img">
+    <img id = "Water" class = "Water" src="images/Water.png" alt="images/Water.png">
+    <img id = "Bird1" class = "Bird1" src="images/Bird.png" alt="Birdy1">
+    <img id = "Bird2" class = "Bird2" src="images/Bird.png" alt="Birdy2">
+  </section>
+  <div class="sec">
+    <h2 class = "h2">Akash Chavan</h2>
+    <p>B.Tech Information and Technology<br>
+
+      <br>Currently Trying to learn Web Developement Basics<br>
+
+      <br>Aenean et tortor at risus viverra adipiscing at in. Odio ut enim blandit volutpat maecenas volutpat. Ipsum dolor sit amet consectetur adipiscing elit duis. Ornare aenean euismod elementum nisi quis eleifend quam. Commodo sed egestas egestas
+      fringilla. Eu non diam phasellus vestibulum lorem. Odio euismod lacinia at quis. Habitant morbi tristique senectus et netus et malesuada fames. Velit scelerisque in dictum non consectetur. Blandit volutpat maecenas volutpat blandit. Nisl
+      tincidunt eget nullam non nisi est sit amet facilisis. Placerat vestibulum lectus mauris ultrices eros in cursus. Faucibus in ornare quam viverra orci sagittis. Senectus et netus et malesuada fames ac. Placerat orci nulla pellentesque
+      dignissim.<br>
+
+      <br>Nulla aliquet porttitor lacus luctus accumsan tortor. Consequat interdum varius sit amet mattis vulputate enim nulla. Aliquam sem et tortor consequat. Enim diam vulputate ut pharetra sit amet aliquam. Volutpat lacus laoreet non curabitur
+      gravida arcu ac tortor dignissim. Lectus mauris ultrices eros in cursus turpis massa tincidunt. In massa tempor nec feugiat nisl pretium fusce id. Ac auctor augue mauris augue. In hendrerit gravida rutrum quisque non tellus orci. At tempor
+      commodo ullamcorper a lacus vestibulum sed arcu. Amet facilisis magna etiam tempor. Id ornare arcu odio ut sem nulla pharetra diam. Sed arcu non odio euismod lacinia at. At lectus urna duis convallis. Adipiscing bibendum est ultricies integer
+      quis auctor elit sed. Vitae tempus quam pellentesque nec. Nunc aliquet bibendum enim facilisis gravida neque. Nec feugiat in fermentum posuere urna nec.<br>
+
+      <br>Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Augue eget arcu dictum varius duis at consectetur. Quam quisque id diam vel. Mi tempus imperdiet nulla malesuada pellentesque. Maecenas volutpat blandit aliquam
+      etiam erat velit scelerisque in. Est ultricies integer quis auctor elit sed vulputate mi. Lorem sed risus ultricies tristique nulla aliquet enim tortor at. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Lectus
+      vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Scelerisque felis imperdiet proin fermentum leo.
+    </p>
+  </div>
+  <script>
+    let text = document.getElementById('text');
+    let button = document.getElementById('btn');
+    let rocks = document.getElementById('Rocks');
+    let forest = document.getElementById('Forest');
+    let water = document.getElementById('Water');
+    let header = document.getElementById('header');
+    let bird1 = document.getElementById('Bird1');
+    let bird2 = document.getElementById('Bird2');
+
+    window.addEventListener('scroll' , function(){
+      let value = window.scrollY;
+      text.style.top = 40 + value * -0.20 + '%';
+      bird1.style.left = value * -2.0+ 'px';
+      bird2.style.left = value * -2.0+ 'px';
+      btn.style.marginTop = 10 + value * 0.5 + 'px';
+      water.style.top = 24 + value * -0.025 + '%';
+    })
+  </script>
+
+  </div>
+</body>
+
+</html>
